@@ -8,7 +8,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-const DRIVER_PHONE = "0912XXXXXXX";
+const DRIVER_PHONE = "09127047738";
 
 function Hero() {
   const handleCall = () => {

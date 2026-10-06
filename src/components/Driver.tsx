@@ -1,8 +1,8 @@
 import { CarFront, Check, Phone, UserRound } from "lucide-react";
 
 const DRIVER = {
-  name: "نام راننده",
-  phone: "0912XXXXXXX",
+  name: "حبیب ابراهیمی",
+  phone: "09127047738",
   vehicle: "سمند سورن",
   experience: "بیش از ۲۵ سال",
 };

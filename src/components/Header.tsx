@@ -1,8 +1,5 @@
-
-import { CarFront, Menu, Phone, X } from "lucide-react";
+import { CarFront, Menu, X } from "lucide-react";
 import { useState } from "react";
-
-const DRIVER_PHONE = "0912XXXXXXX";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +46,6 @@ function Header() {
           </a>
 
           <a href="#booking" className="nav-call" onClick={closeMenu}>
-            <Phone size={16} />
             رزرو سفر
           </a>
         </nav>
