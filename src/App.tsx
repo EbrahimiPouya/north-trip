@@ -73,26 +73,6 @@ function App() {
     }
   };
 
-  const renderNumberInput = (
-    value: number,
-    setter: (value: number) => void,
-    min: number,
-    max: number,
-    step = 1,
-  ) => (
-    <input
-      type="number"
-      min={min}
-      max={max}
-      step={step}
-      value={value}
-      style={inputStyle}
-      onChange={(e) =>
-        handleNumberChange(e.target.value, setter, min, max)
-      }
-    />
-  );
-
   return (
     <div
       style={{
