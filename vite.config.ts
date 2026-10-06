@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/h3-visualizer',
+  base: '/north-trip',
   server:{
     port: 3000
   }
