@@ -1,6 +1,5 @@
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import MapCenterSelector from "./MapCenterSelector";
 import { useEffect, useState } from "react";
 import ProvinceLayer from "./ProvinceLayer";
 
@@ -20,10 +19,6 @@ export default function Map({
   borderWeight,
   zoomPercent,
 }: MapProps) {
-  const [center, setCenter] = useState<[number, number]>([
-    32.4279,
-    53.688,
-  ]);
   const [localZoom ,setLocalZoom] = useState(50)
 
   useEffect(()=>{
@@ -51,9 +46,6 @@ export default function Map({
       />
       <SetMapZoom zoom={localZoom} />
       <ProvinceLayer key={borderColor} color={borderColor} borderOpacity={borderOpacity} borderWeight={borderWeight}/>
-      <MapCenterSelector
-          onSelect={setCenter}
-        />
     </MapContainer>
   );
 }
