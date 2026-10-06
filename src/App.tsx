@@ -55,24 +55,6 @@ function App() {
   const [borderWeight, setBorderWeight] = useState(3);
   const [borderOpacity, setBorderOpacity] = useState(100);
 
-  const clamp = (value: number, min: number, max: number) =>
-    Math.min(max, Math.max(min, value));
-
-  const handleNumberChange = (
-    value: string,
-    setter: (value: number) => void,
-    min: number,
-    max: number,
-  ) => {
-    if (value === "") return;
-
-    const parsed = Number(value);
-
-    if (!Number.isNaN(parsed)) {
-      setter(clamp(parsed, min, max));
-    }
-  };
-
   return (
     <div
       style={{
