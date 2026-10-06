@@ -52,14 +52,9 @@ export default function Map({
 
 interface MapProps {
   tileUrl: string;
-  resolution: number;
-  color: string;
   borderColor: string;
   borderWeight: number;
   borderOpacity: number;
-  h3Opacity: number;
-  h3FillOpacity: number;
-  count: number;
   zoomPercent: number;
 }
 

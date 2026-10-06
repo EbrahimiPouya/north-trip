@@ -10,7 +10,6 @@ const TILE_SERVERS = {
   },
 };
 
-const MAX_CELLS = 500;
 
 const sectionStyle: React.CSSProperties = {
   display: "flex",
@@ -50,16 +49,11 @@ function App() {
   const [tileServer, setTileServer] =
     useState<keyof typeof TILE_SERVERS>("osm");
   const [zoomPercent, setZoomPercent] = useState(50);
-  const [resolution, setResolution] = useState(5);
 
-  const [color, setColor] = useState("#ff0000");
   const [borderColor, setBorderColor] = useState("#50d475");
 
   const [borderWeight, setBorderWeight] = useState(3);
   const [borderOpacity, setBorderOpacity] = useState(100);
-  const [h3Opacity, setH3Opacity] = useState(100);
-  const [h3FillOpacity, setH3FillOpacity] = useState(30);
-  const [count, setCount] = useState(100);
 
   const clamp = (value: number, min: number, max: number) =>
     Math.min(max, Math.max(min, value));
@@ -211,76 +205,6 @@ function App() {
               </label>
             </section>
 
-            {/* H3 Grid */}
-            <section style={sectionStyle}>
-              <div style={sectionTitleStyle}>شبکه H3</div>
-
-              <label style={labelStyle}>
-                تفکیک‌پذیری شبکه
-
-                <select
-                  value={resolution}
-                  style={inputStyle}
-                  onChange={(e) =>
-                    setResolution(Number(e.target.value))
-                  }
-                >
-                  {Array.from(
-                    { length: 12 },
-                    (_, i) => i + 1,
-                  ).map((value) => (
-                    <option key={value} value={value}>
-                      {value}
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              <label style={labelStyle}>
-                رنگ سلول‌ها
-
-                <ColorInput
-                  value={color}
-                  onChange={setColor}
-                />
-              </label>
-
-              <label style={labelStyle}>
-                شفافیت خطوط سلول‌ها
-
-                <RangeInput
-                  value={h3Opacity}
-                  min={0}
-                  max={100}
-                  onChange={setH3Opacity}
-                  suffix="%"
-                />
-              </label>
-
-              <label style={labelStyle}>
-                شفافیت سطح داخلی سلول‌ها
-
-                <RangeInput
-                  value={h3FillOpacity}
-                  min={0}
-                  max={100}
-                  onChange={setH3FillOpacity}
-                  suffix="%"
-                />
-              </label>
-
-              <label style={labelStyle}>
-                حداکثر تعداد سلول‌ها
-
-                {renderNumberInput(
-                  count,
-                  setCount,
-                  1,
-                  MAX_CELLS,
-                )}
-              </label>
-            </section>
-
             {/* Borders */}
             <section style={sectionStyle}>
               <div style={sectionTitleStyle}>مرزها</div>
@@ -334,11 +258,6 @@ function App() {
       <Map
         zoomPercent={zoomPercent}
         tileUrl={TILE_SERVERS[tileServer].url}
-        resolution={resolution}
-        color={color}
-        h3Opacity={h3Opacity}
-        h3FillOpacity={h3FillOpacity}
-        count={count}
         borderColor={borderColor}
         borderOpacity={borderOpacity}
         borderWeight={borderWeight}
