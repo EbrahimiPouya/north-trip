@@ -48,7 +48,7 @@ function App() {
 
   const [tileServer, setTileServer] =
     useState<keyof typeof TILE_SERVERS>("osm");
-  const [zoomPercent, setZoomPercent] = useState(50);
+  const [zoomPercent, setZoomPercent] = useState(40);
 
   const [borderColor, setBorderColor] = useState("#50d475");
 

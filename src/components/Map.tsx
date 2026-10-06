@@ -35,6 +35,7 @@ export default function Map({
       zoomSnap={0.1}
       zoomDelta={0.1}
       bounds={IRAN_BOUNDS}
+      center={[35.6997, 51.3370]}
       style={{
         width: "100%",
         height: "100vh",

@@ -1,5 +1,5 @@
 {
-  "name": "leaflet-h3-app",
+  "name": "shomal-trip",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "h3": "2.0.1-rc.32",
-    "h3-js": "^4.5.0",
     "leaflet": "^1.9.4",
     "react": "^19.2.8",
     "react-colorful": "^5.8.1",
