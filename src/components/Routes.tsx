@@ -2,7 +2,7 @@ import { ArrowLeft, MapPin, Navigation } from "lucide-react";
 
 const routes = [
   {
-    title: "تهران → کلاردشت",
+    title: "تهران → رامسر",
     description: "حرکت روزانه",
   },
   {
@@ -10,7 +10,7 @@ const routes = [
     description: "حرکت روزانه",
   },
   {
-    title: "کلاردشت / نوشهر → تهران",
+    title: "رامسر / نوشهر → تهران",
     description: "برگشت روزانه",
   },
 ];

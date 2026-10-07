@@ -6,9 +6,9 @@ import type { FormEvent } from "react";
 const DRIVER_PHONE = "09127047738";
 
 const routes = [
-  "تهران → کلاردشت",
+  "تهران → رامسر",
   "تهران → نوشهر",
-  "کلاردشت / نوشهر → تهران",
+  "رامسر / نوشهر → تهران",
 ];
 
 function Booking() {

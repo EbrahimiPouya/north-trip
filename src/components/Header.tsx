@@ -18,7 +18,7 @@ function Header() {
 
           <span className="brand-text">
             <strong>راه شمال</strong>
-            <small>تهران • کلاردشت • نوشهر</small>
+            <small>تهران • رامسر • نوشهر</small>
           </span>
         </a>
 

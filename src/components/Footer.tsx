@@ -18,7 +18,7 @@ function Footer() {
 
             <span className="brand-text">
               <strong>راه شمال</strong>
-              <small>تهران • کلاردشت • نوشهر</small>
+              <small>تهران • رامسر • نوشهر</small>
             </span>
           </a>
 
@@ -59,7 +59,7 @@ function Footer() {
         </span>
 
         <span>
-          تهران • کلاردشت • نوشهر
+          تهران • رامسر • نوشهر
         </span>
       </div>
     </footer>
