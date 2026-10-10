@@ -1,25 +1,14 @@
 
 import {
-  ArrowLeft,
   CarFront,
   Clock3,
   MapPin,
-  Phone,
   ShieldCheck,
 } from "lucide-react";
+import HeroActions from "./HeroActions";
 
-const DRIVER_PHONE = "09127047738";
 
 function Hero() {
-  const handleCall = () => {
-    window.location.href = `tel:${DRIVER_PHONE}`;
-  };
-
-  const handleBooking = () => {
-    document.getElementById("booking")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
 
   return (
     <section id="home" className="hero">
@@ -46,25 +35,7 @@ function Hero() {
             آشنا با مسیر و متعهد به رانندگی ایمن.
           </p>
 
-          <div className="hero-actions">
-            <button
-              type="button"
-              className="button button-primary"
-              onClick={handleBooking}
-            >
-              رزرو سفر
-              <ArrowLeft size={18} />
-            </button>
-
-            <button
-              type="button"
-              className="button button-secondary"
-              onClick={handleCall}
-            >
-              <Phone size={18} />
-              تماس با راننده
-            </button>
-          </div>
+         <HeroActions/>
 
           <div className="hero-stats">
             <div className="hero-stat">

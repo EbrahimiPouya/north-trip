@@ -1,3 +1,4 @@
+'use client';
 import { CarFront, Menu, X } from "lucide-react";
 import { useState } from "react";
 

@@ -1,4 +1,5 @@
-import { CarFront, Check, Phone, UserRound } from "lucide-react";
+import { CarFront, Check,  UserRound } from "lucide-react";
+import DriverActions from "./DriverActions";
 
 const DRIVER = {
   name: "حبیب ابراهیمی",
@@ -8,10 +9,7 @@ const DRIVER = {
 };
 
 function Driver() {
-  const handleCall = () => {
-    window.location.href = `tel:${DRIVER.phone}`;
-  };
-
+  
   return (
     <section id="driver" className="driver-section">
       <div className="container driver-content">
@@ -74,14 +72,7 @@ function Driver() {
             <p>{DRIVER.experience} سابقه رانندگی و مسافرکشی</p>
           </div>
 
-          <button
-            type="button"
-            className="driver-call"
-            onClick={handleCall}
-            aria-label="تماس با راننده"
-          >
-            <Phone size={19} />
-          </button>
+          <DriverActions/>
         </div>
       </div>
     </section>

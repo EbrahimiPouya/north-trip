@@ -1,12 +1,9 @@
-import { CarFront, Phone } from "lucide-react";
+import { CarFront } from "lucide-react";
+import FooterActions from "./FooterActions";
 
-const DRIVER_PHONE = "09127047738";
 
 function Footer() {
-  const handleCall = () => {
-    window.location.href = `tel:${DRIVER_PHONE}`;
-  };
-
+  
   return (
     <footer className="footer">
       <div className="container footer-inner">
@@ -42,14 +39,7 @@ function Footer() {
             برای هماهنگی و رزرو سفر تماس بگیرید.
           </p>
 
-          <button
-            type="button"
-            className="footer-phone"
-            onClick={handleCall}
-          >
-            <Phone size={17} />
-            {DRIVER_PHONE}
-          </button>
+          <FooterActions/>
         </div>
       </div>
 
