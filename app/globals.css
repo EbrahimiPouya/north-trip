@@ -110,11 +110,10 @@ img {
 .brand-icon {
   width: 42px;
   height: 42px;
-  border-radius: 12px;
+  border-radius: 50%;
   display: grid;
   place-items: center;
   color: var(--white);
-  background: var(--primary);
   box-shadow: 0 8px 18px rgba(23, 107, 91, 0.2);
 }
 

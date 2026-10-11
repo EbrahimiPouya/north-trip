@@ -1,5 +1,6 @@
 'use client';
-import { CarFront, Menu, X } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 function Header() {
@@ -13,9 +14,13 @@ function Header() {
     <header className="header">
       <div className="container header-inner">
         <a href="#home" className="brand" onClick={closeMenu}>
-          <span className="brand-icon">
-            <CarFront size={20} />
-          </span>
+          <Image
+            src="/logo.png"
+            alt="راه شمال"
+            width={42}
+            height={42}
+            className="brand-icon"
+          />
 
           <span className="brand-text">
             <strong>راه شمال</strong>
