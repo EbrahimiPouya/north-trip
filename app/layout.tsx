@@ -5,9 +5,8 @@ import Footer from "./../src/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "سفر شمال | سرویس تهران به شمال",
-  description:
-    "سرویس دربستی تهران به چالوس، کلاردشت و نوشهر با راننده باتجربه.",
+  title: "دربستی تهران به شمال با راننده مشخص",
+  description: "دربستی تهران به چالوس، نوشهر و رامسر با راننده مشخص. برای هماهنگی زمان حرکت تماس بگیرید",
   icons: {
     icon: [
       {
